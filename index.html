@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Страница Александра Болдова о космосе, астрономии и наблюдении небесных объектов.">
+    <title>Космический энтузиаст — ЛР №4</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+     <style>
+        .avatar {
+            border: 3px solid var(--accent-color);
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+       <div class="stars-container" style="position: relative;">
+        <div class="star star-1" aria-hidden="true"></div>
+        <div class="star star-2" aria-hidden="true"></div>
+        <div class="star star-3" aria-hidden="true"></div>
+        <div class="star star-4" aria-hidden="true"></div>
+        <div class="star star-5" aria-hidden="true"></div>
+
+        <header id="about" class="page-header">
+            <h1>Александр Болдов</h1>
+            <p>Космический энтузиаст и астроном-любитель</p>
+        </header>
+
+        <nav class="site-nav" aria-label="Основная навигация">
+            <ul class="nav-list">
+                <li><a class="space-link nav-link" href="#about">Обо мне</a></li>
+                <li><a class="space-link nav-link" href="#skills">Навыки</a></li>
+                <li><a class="space-link nav-link" href="#objects">Объекты для наблюдения</a></li>
+                <li><a class="space-link nav-link" href="#facts">Космические факты</a></li>
+                <li><a class="space-link nav-link" href="#projects">Проекты</a></li>
+                <li><a class="space-link nav-link" href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <section class="profile-section" aria-labelledby="profile-title">
+                <h2 id="profile-title">Обо мне</h2>
+                <img class="avatar" src="./images/Avatar.jpg" alt="Портрет Александра Болдова" width="448" height="598">
+                <p>Люблю изучать космос, наблюдать за звёздами и узнавать, как устроена Вселенная.</p>
+            </section>
+
+            <section class="skills-section" id="skills">
+                <h2>Навыки</h2>
+                <ul>
+                    <li>Строительство космических аппаратов в Kerbal Space Program</li>
+                    <li>Анализ астрономических данных</li>
+                    <li>3D-моделирование орбит</li>
+                    <li>Обработка астрофотографий</li>
+                </ul>
+            </section>
+
+
+            <section class="objects-section" id="objects">
+                <h2>Объекты для наблюдения</h2>
+                <p class="section-intro">Несколько ярких объектов, с которых можно начать знакомство с ночным небом. Яркость указана в видимых звёздных величинах.</p>
+
+                <div class="objects-container">
+                    <article class="object-card">
+                        <h3>Сириус</h3>
+                        <p><strong>Созвездие:</strong> Большой Пёс</p>
+                        <p><strong>Яркость:</strong> −1,46 mag</p>
+                    </article>
+
+                    <article class="object-card">
+                        <h3>Вега</h3>
+                        <p><strong>Созвездие:</strong> Лира</p>
+                        <p><strong>Яркость:</strong> +0,03 mag</p>
+                    </article>
+
+                    <article class="object-card">
+                        <h3>Арктур</h3>
+                        <p><strong>Созвездие:</strong> Волопас</p>
+                        <p><strong>Яркость:</strong> −0,05 mag</p>
+                    </article>
+
+                    <article class="object-card">
+                        <h3>Бетельгейзе</h3>
+                        <p><strong>Созвездие:</strong> Орион</p>
+                        <p><strong>Яркость:</strong> 0 - 1,3 mag</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="facts-section" id="facts">
+                <h2>Космические факты</h2>
+                <div class="facts-grid">
+                    <article class="fact-card">
+                        <div class="fact-icon" aria-hidden="true">🌌</div>
+                        <h3>Возраст Вселенной</h3>
+                        <p class="fact-number">≈ 13,8 млрд</p>
+                        <p class="fact-description">лет — современная оценка возраста Вселенной</p>
+                    </article>
+
+                    <article class="fact-card">
+                        <div class="fact-icon" aria-hidden="true">💡</div>
+                        <h3>Скорость света</h3>
+                        <p class="fact-number">299 792</p>
+                        <p class="fact-description">км/с в вакууме</p>
+                    </article>
+
+                    <article class="fact-card">
+                        <div class="fact-icon" aria-hidden="true">☀</div>
+                        <h3>Земля — Солнце</h3>
+                        <p class="fact-number">149,6 млн</p>
+                        <p class="fact-description">км — среднее расстояние между Землёй и Солнцем</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="projects-section" id="projects">
+                <h2>Проекты</h2>
+                <ol>
+                    <li>Ракета «ДальноЛёт-1»</li>
+                    <li>Миссия «Вояджер-1»</li>
+                    <li>Марсоход «Марс-2»</li>
+                    <li>Программа «Артемида»</li>
+                </ol>
+            </section>
+
+            <section class="contact-section" id="contacts">
+                <h2>Форма обратной связи</h2>
+                <form action="#contacts" method="get">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" autocomplete="name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Введите ваш email" autocomplete="email">
+
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Введите ваше сообщение"></textarea>
+
+                    <button type="submit">Отправить</button>
+                </form>
+            </section>
+
+            <aside class="favorite-section">
+                <h2>Любимое созвездие</h2>
+                <p>
+                    Созвездие Ориона, в особенности звезда Бетельгейзе.
+                    <a class="space-link" href="https://ru.wikipedia.org/wiki/Орион_(созвездие)" target="_blank" rel="noopener noreferrer">Подробнее о созвездии</a>
+                </p>
+            </aside>
+        </main>
+
+        <footer class="page-footer">
+            <p>&copy; 2026 Александр Болдов</p>
+        </footer>
+    </div>
+
+    <!-- Подключение скрипта Лабораторной работы №4 -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
